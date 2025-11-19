@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #111;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+    NAVBAR
+=========================== */
+header {
+    background: #000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #1e355e; /* rojo */
+}
+
+/* ===========================
+    CONTENIDO DE SUPLEMENTOS
+=========================== */
+.suplementos-contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.suplementos-contenedor h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.suplementos-contenedor > p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.suplemento {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.suplemento:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.suplemento h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #000;
+    text-align: center;
+}
+
+.suplemento p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.suplemento img {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.precio {
+    font-weight: bold;
+    color: #e60000;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ===========================
+    CONTACTO
+=========================== */
+.contacto-contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 5px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto-contenedor h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #1e355e;
+}
+
+.contacto-contenedor p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.info-contacto {
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-contacto h2 {
+    font-size: 1.3rem;
+    margin: 20px 0 8px;
+    color: #000;
+}
+
+.mapa-contenedor {
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociales {
+    margin-top: 30px;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 2.2rem;
+}
+
+.iconos-redes a {
+    color: #333;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.iconos-redes a:hover {
+    color: #e60000;
+    transform: translateY(-3px);
+}
+
+/* Colores específicos para redes */
+.iconos-redes a[href*="wa.me"] .fab.fa-whatsapp {
+    color: #25D366;
+}
+
+.iconos-redes a[href*="wa.me"]:hover .fab.fa-whatsapp {
+    color: #128C7E;
+}
+
+.iconos-redes a[href*="instagram"] .fab.fa-instagram {
+    color: #E1306C;
+}
+
+.iconos-redes a[href*="facebook"] .fab.fa-facebook-f {
+    color: #4267B2;
+}
+
+/* ===========================
+    FOOTER
+=========================== */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px; /* respetado tal como lo diste */
+    font-size: 0.9rem;
+}

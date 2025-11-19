@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fff9f9 0%, #ffffff 100%);
+    color: #2c3e50;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.comida {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.comida:last-child {
+    border-bottom: none;
+}
+
+.comida h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #c0392b;
+}
+
+.comida p {
+    line-height: 1.7;
+    color: #34495e;
+    font-size: 1.05rem;
+}
+
+.destacado {
+    background: #fff5f5;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border-left: 4px solid #e74c3c;
+}
+
+.snacks {
+    background: #fdf2f2;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    .comida h2 {
+        font-size: 1.4rem;
+    }
+}
